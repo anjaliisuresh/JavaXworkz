@@ -1,0 +1,8 @@
+class WashingMachine{
+
+  public static void wash ()
+  {
+    System.out.println("runing wash in WashingMachine")
+  
+  }
+}
