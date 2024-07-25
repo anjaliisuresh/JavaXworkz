@@ -1,28 +1,23 @@
-class PalaceRunner
-{
-	public static void main (String[] information)
-	{
-		System.out.println("running main in PalaceRunner");
-		if(information.length==4)
-		{
-			System.out.println("getting 4 reference from main method arguments");
-			String name= information[0];
-			String location= information[1];
-			String builtBy= information[2];
-			String buildYear= information[3];
-			
-			System.out.println("name:"+name);
-			System.out.println("location:"+location);
-			System.out.println("builtBy:"+builtBy);
-			System.out.println("buildYear:"+buildYear);
-			
-			
-		}
-		else
-		{
-			System.out.println("not getting 4 reference from main method arguments");
+class PlaceRunner{
+	
+	
+	public static void main(String[] args){
 		
-		}
+		System.out.println("start of main");
+		Place place=new Place();
+		String name=place.name;
+		double distance=place.distance;
+		int area=place.area;
+		System.out.println("name:"+name);
+		System.out.println("distance:"+distance);
+		System.out.println("area:"+area);
+		place.name="Bnagalore";
+		place.distance=60;
+		place.area=32899;
+		System.out.println("name:"+place.name);
+		System.out.println("cost:"+place.distance);
+		System.out.println("quantity:"+place.area);
 		
+		System.out.println("end of main");
 	}
 }
